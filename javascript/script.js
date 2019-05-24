@@ -40,18 +40,21 @@ fetch('http://localhost:5001/maravilhosas')
             else {
                 return imagem.setAttribute('src', './img/img-mulher.png')
             };
+
+            //-------------------------------------- METODO DELETE-----------------
+            
+
         }
         
     })
-    .catch((erro) => {
-        console.log(erro)
-        
-    })
-    
-    
-    
-    
-    
+
+})
+.catch((erro) => {
+    console.log(erro)
+})
+
+
+
     //---------------------------------------METODO POST----------------
     
     const button = document.getElementById("send_form");
@@ -82,10 +85,10 @@ fetch('http://localhost:5001/maravilhosas')
         console.log(data);
         document.getElementById('mensagem_cadastro').textContent = 'uhu, deu certo!'
         
+        
     })
     .catch((erro) => {
         console.log(erro)
+        
     })
-})
-
 })
